@@ -34,7 +34,7 @@ resource "azurerm_storage_account" "storage_account" {
 
   }
 
-  tags = var.common_tags
+  tags = var.tags
 
   depends_on = [random_string.salt]
 }
@@ -62,5 +62,5 @@ resource "azurerm_private_endpoint" "storage_blob" {
 
   depends_on = [azurerm_storage_account.storage_account]
 
-  tags = var.common_tags
+  tags = var.tags
 }
