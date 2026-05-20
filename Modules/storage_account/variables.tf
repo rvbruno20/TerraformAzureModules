@@ -1,0 +1,10 @@
+variable "location" {}
+variable "application" {}
+variable "environment" {}
+variable "platform" {}
+variable "resource_group_name" {}
+variable "storage_account_tier" {}
+variable "storage_account_replication_type" {}
+variable "common_tags" {}
+variable "private_endpoint_subnet_id" {}
+variable "private_vault_dns_zone" {}
